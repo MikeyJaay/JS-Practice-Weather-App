@@ -39,6 +39,20 @@ body {
   margin-right: 16px;
   font-size: 18px;
 }
+.search > button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.search button img {
+  width: 16px; 
+  
+}
 
 .weather-icon {
   width: 170px;
@@ -62,4 +76,21 @@ body {
   justify-content: space-between;
   padding: 0 20px;
   margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col > img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
 }
