@@ -35,5 +35,22 @@
     </div>
     </div>
 
+<script>
+
+  const apiKey = '6fc351885099c25c080660627ffbc1b6';
+  const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=imperial&q=detroit';
+
+async function checkWeather(){
+  const response = await fetch(apiUrl + `&appid=${apiKey}`);
+  var data = await response.json();
+
+  console.log(data);
+}
+
+
+checkWeather();
+</script>
+
+
   </body>
 </html>
